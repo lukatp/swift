@@ -1,7 +1,7 @@
 <?php
 
-class Book{
-    public function getAll(){
+class BookController{
+    public function getAll($a){
         // 使用 FUSE
         $book = R::xdispense('book');
 
