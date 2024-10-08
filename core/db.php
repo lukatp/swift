@@ -36,7 +36,7 @@ class DbConnection {
         R::ext('xdispense', function($type) {
 
             $modelName = ucfirst($type);
-            $modelFile = 'model/' . $modelName . '.php';
+            $modelFile = 'app/model/' . $modelName . '.php';
             if (file_exists($modelFile)) {
                 require $modelFile;
             }
